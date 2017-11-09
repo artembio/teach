@@ -1,0 +1,37 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+  html_notebook: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r}
+library(ggplot2)
+```
+
+```{r}
+d<-read.csv('running.txt')
+head(d)
+```
+
+```{r}
+ggplot(d,aes(d$час)) + geom_histogram(binwidth = 0.1) + labs(title='Фііііі')
+```
+
+```{r}
+x<-1.1
+y<-1.2
+x
+y
+```
+```{r}
+print(x)
+```
+```{r}
+cat('xіі=',x,'\n',
+    'y=',y)
+```
+
